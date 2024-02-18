@@ -1,7 +1,7 @@
 import './App.css';
 import CurrentUserContext from '../context/CurrentUserContext.jsx';
 import ErrorContext from '../context/ErrorContext.jsx';
-import Preloader from './Preloader/Preloader.jsx';
+//import Preloader from './Preloader/Preloader.jsx';
 import { Routes, Route } from 'react-router-dom'; 
 import Main from "./Main/Main.jsx";
 import Movies from './Movies/Movies.jsx';
@@ -9,7 +9,8 @@ import Register from './Register/Register.jsx';
 import Login from './Login/Login.jsx';
 import Profile from './Profile/Profile.jsx';
 import NotFound from './NotFound/NotFound.jsx';
-import { useState } from 'react';
+//import { useState } from 'react';
+import SavedMovies from './SavedMovies/SavedMovies.jsx';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route path="/signin" element={<Login />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/movies" element={<Movies />} />
+              <Route path="/saved-movies" element={<SavedMovies />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
