@@ -56,10 +56,11 @@
     height: 15px;
 }
 
-.profile__input-border{
+.profile__input_type_border{
     width: 100%;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
+    padding-bottom: 16px;
     border-bottom: 1px solid rgba(66, 66, 66, 1);
 }
 
@@ -112,53 +113,12 @@
     line-height: 16.94px;
 }
 
-.profile__update-button_type_disabled {
-    background: #f8f8f8;
-    color: #c2c2c2;
-    cursor: default;
-}
-
-.profile__error-api{
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 13.31px;
-    color: rgba(255, 0, 76, 1);
-    min-height: 14px;
-    margin-bottom: 20px;
-}
-
-.profile__error {
-    color: #EE3465;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 10px;
-    letter-spacing: 0em;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 410px;
-}
-
-.profile__success {
-    color: rgba(43, 224, 128, 1);
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 10px;
-    letter-spacing: 0em;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 410px;
-}
-
 @media screen and (max-width: 768px) {
     .profile {
         padding-top: 230px;
     }
 
-    .profile__userName {
+    .profile__user-name {
         margin: 0 0 94px 0;
     }
 
@@ -179,7 +139,7 @@
         max-width: 260px;
     }
 
-    .profile__userName {
+    .profile__user-name {
         margin: 0 0 78px 0;
     }
 

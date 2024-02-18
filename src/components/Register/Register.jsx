@@ -27,45 +27,36 @@ function Register (){
               maxLength="40"
               name="username"
             />
-            <span id="error-email" className="sign-up__error">
-              
-            </span>
           </fieldset>
           <fieldset className="sign-up__input-container">
             <p className="sign-up__text">E-mail</p>
             <input
               id="email"
               type="email"
+              className="sign-up__input"
               autoComplete="off"
               required
               minLength="2"
               maxLength="40"
               name="email"
             />
-            <span id="error-email" className="sign-up__error">
-              
-            </span>
           </fieldset>
           <fieldset className="sign-up__input-container">
             <p className="sign-up__text">Пароль</p>
             <input
               id="password"
               type="password"
+              className="sign-up__input"
               autoComplete="off"
               required
               minLength="2"
               maxLength="200"
               name="password"
             />
-            <span id="error-pass" className="sign-up__error">
-              
-            </span>
           </fieldset>
-          <span id="error-api" className="sign-up__api-error">
-            
-          </span>
           <button
             type="submit"
+            className="sign-up__button link"
           >
             Зарегистрироваться
           </button>

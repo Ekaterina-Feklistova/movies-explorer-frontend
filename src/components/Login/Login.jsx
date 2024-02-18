@@ -20,36 +20,30 @@ function Login(){
             <input
               id="email"
               type="email"
+              className="sign-in__input"
               autoComplete="off"
               required
               minLength="2"
               maxLength="40"
               name="email"
             />
-            <span id="error-email" className="sign-in__error">
-              
-            </span>
           </fieldset>
           <fieldset className="sign-in__input-container">
             <p className="sign-in__text">Пароль</p>
             <input
               id="password"
               type="password"
+              className="sign-in__input"
               autoComplete="off"
               required
               minLength="2"
               maxLength="200"
               name="password"
             />
-            <span id="error-pass" className="sign-in__error">
-              
-            </span>
           </fieldset>
-          <span id="error-api" className="sign-in__api-error">
-            
-          </span>
           <button
             type="submit"
+            className="sign-in__button link"
           >
             Войти
           </button>

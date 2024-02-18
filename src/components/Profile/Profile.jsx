@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import './Profile.css';
+import Header from '../Header/Header';
 function Profile(){
   return (
     <>
+      <Header />
       <section className="profile">
         <h2 className="profile__user-name">{`Привет!`}</h2>
         <form method="post" className="profile__form" noValidate>
@@ -18,11 +20,7 @@ function Profile(){
               className="profile__input profile__input_type_border"
               placeholder="Введите Ваше имя"
             />
-            <span id="error-name" className="profile__error">
-              Ошибка
-            </span>
           </fieldset>
-          <span className="profile__input-border"></span>
           <fieldset className="profile__input-container">
             <p className="profile__input-name">E-mail</p>
             <input
@@ -35,16 +33,7 @@ function Profile(){
               className="profile__input"
               placeholder="Введите Вашу электронную почту"
             />
-            <span id="error-email" className="profile__error">
-              Ошибка
-            </span>
           </fieldset>
-          <span id="error-api" className="profile__error">
-            Ошибка
-          </span>
-          <span id="success-api" className="profile__success">
-            Обновление профиля произошло успешно.
-          </span>
         </form>
           
             <button
